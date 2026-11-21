@@ -1,0 +1,35 @@
+Vernadsky campus — architectural reconstruction
+
+The homepage image (vernadsky.webp) is a Blender Cycles render. The
+on-demand rotatable model (vernadsky.glb) is exported from the same scene.
+The south and east elevations use the photograph credited below. Dimensions,
+landscaping, lighting and the surrounding buildings are artistic estimates.
+The render and textured model are distributed under the Free Art License 1.3.
+The rendered sky uses Poly Haven’s CC0 Kloofendal 48d Partly Cloudy (Pure Sky).
+https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky
+
+Campus reference photograph
+
+Title: Mgimo.jpg
+Author credit: A.Savin, Wikipedia
+Photographed: 26 May 2007
+Subject: MGIMO campus, Vernadsky Prospekt, Moscow, Russia
+Source: https://commons.wikimedia.org/wiki/File:Mgimo.jpg
+Original JPEG: https://upload.wikimedia.org/wikipedia/commons/0/0d/Mgimo.jpg
+License for the original and all three WebP versions: Free Art License 1.3
+License text: https://artlibre.org/licence/lal/en/
+
+Mgimo.jpg is the original 2048 x 1536 photograph.
+The hero versions crop the photograph to 16:9, keeping its full width
+and trimming sky and foreground. They were resized and encoded with Sharp.
+
+mgimo-hero-640.webp     640 x 360
+mgimo-hero-1280.webp   1280 x 720
+mgimo-hero-2048.webp   2048 x 1152
+
+For publication, credit “A.Savin, Wikipedia”, identify the 16:9 crop,
+and link to the source and license above. Redistribute these versions
+under the Free Art License 1.3.
+
+The three corresponding -facade.webp layers also remove the connected blue
+sky for a typographic overlay. They are distributed under the same license.

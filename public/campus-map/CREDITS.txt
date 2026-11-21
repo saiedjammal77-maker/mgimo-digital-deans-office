@@ -1,0 +1,28 @@
+Campus grounds, building outlines, paths and sports pitches
+© OpenStreetMap contributors, Open Database License 1.0.
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+Source: https://www.openstreetmap.org/relation/2799810
+Derived outdoor geometry is available as grounds.json alongside this file
+under the same license. Coordinates are local metres east and south.
+Heights without mapped floor counts, façade details and planting are illustrative.
+Campus render and photographic model credits: /campus-photo/CREDITS.txt
+
+Street-level graphics
+Tree views rendered in Blender from Tree Small 02, Poly Haven, CC0.
+https://polyhaven.com/a/tree_small_02
+Ground surfaces adapted from Grass Ground, Asphalt 04 and Concrete Pavement 02,
+Poly Haven, CC0. The source images were resized and compressed for the web.
+https://polyhaven.com/a/grass_ground
+https://polyhaven.com/a/asphalt_04
+https://polyhaven.com/a/concrete_pavement_02
+Architecture.glb contains original window, entrance and seating geometry.
+Its stone material uses a crop of Mgimo.jpg by A.Savin, Wikipedia.
+The textured kit is distributed under the Free Art License 1.3.
+
+The grounds-shell.glb, campus-aerial.webp and campus-overhead.webp are Blender
+reconstructions based on the mapped outlines. Window and limestone treatments
+derive from Mgimo.jpg by A.Savin, Wikipedia, under the Free Art License 1.3.
+https://commons.wikimedia.org/wiki/File:Mgimo.jpg
+https://artlibre.org/licence/lal/en/
+The courtyard, elevations, roof details and trees are artistic reconstructions.

@@ -1,0 +1,78 @@
+.page { --blue:#112e50; --paper:#f8f5ec; --rule:#c9cabc; background:var(--paper); color:var(--blue); min-height:100vh }
+.wrap,.heroInner,.tour,.footer { width:min(100% - clamp(36px,9vw,160px),1480px); margin-inline:auto }
+.nav { background:#0e2948; color:white; border-bottom:1px solid #ffffff31 }
+.wrap { height:64px; display:flex; align-items:center; justify-content:space-between }
+.hero { position:relative; isolation:isolate; overflow:hidden; background:#102f52; color:#fff }
+.hero .photo { left:auto!important; right:0; width:74%!important; object-fit:cover; object-position:center 52%; z-index:-2 }
+.hero::after { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,#102f52 8%,rgba(16,47,82,.98) 25%,rgba(16,47,82,.77) 45%,rgba(16,47,82,.16) 75%),linear-gradient(0deg,#0e294850,transparent 65%) }
+.heroInner { padding:clamp(38px,4.8vw,80px) 0 }
+.kicker,.sectionLabel { font-size:.7rem; margin:0; font-weight:760; letter-spacing:.14em; text-transform:uppercase; line-height:1.6 }
+.kicker { color:#f5e4ba; display:flex; align-items:center; gap:8px }
+.hero h1 { margin:18px 0 24px; font:500 clamp(60px,7.4vw,116px)/.86 var(--serif); letter-spacing:-.045em }
+.hero em { display:block; color:#fff5dd; font-weight:450 }
+.enter { display:inline-flex; align-items:center; min-height:44px; gap:20px; border-bottom:1px solid #e5c888; font-size:.86rem; font-weight:650 }
+.enter+.enter{margin-inline-start:clamp(12px,2vw,32px)}
+.page{--blue:#07172d;--paper:#f5f7fa;--rule:#b6c2ce}
+.hero h1{font-family:var(--sans);font-weight:610;letter-spacing:-.07em}
+.hero h1 em{font-family:var(--serif);font-weight:510;color:var(--gold)}
+.guide{border-top:2px solid var(--blue)}
+.tour { padding-top:clamp(30px,4vw,64px); scroll-margin-top:16px }
+.heading { display:flex; justify-content:space-between; align-items:flex-end; gap:16px; margin-bottom:23px }
+.sectionLabel { color:#686245 }
+.heading h2,.details h3 { font-family:var(--serif); font-weight:550; letter-spacing:-.04em }
+.heading h2 { font-size:clamp(41px,4.7vw,76px); line-height:.98; margin:6px 0 0 }
+.source { display:inline-flex; align-items:center; gap:8px; min-height:42px; font-size:.82rem; font-weight:700; text-decoration:underline; text-underline-offset:4px }
+.spread { display:grid; grid-template-columns:minmax(0,1.85fr) minmax(250px,1fr); gap:clamp(24px,3.8vw,68px) }
+.viewer { min-width:0; margin:0 }
+.stage { position:relative; display:grid; place-items:center; height:clamp(355px,32vw,500px); overflow:hidden; background-color:#e6e8de;
+  background-image:linear-gradient(#81928717 1px,transparent 1px),linear-gradient(90deg,#81928717 1px,transparent 1px); background-size:24px 24px; border:1px solid var(--rule); border-bottom:0 }
+.scene { position:absolute; inset:0; cursor:grab }
+.scene:active { cursor:grabbing }
+.marker,.planMarker { position:absolute; transform:translate(-50%,-100%); border:1px solid #879797; background:#faf8ef; color:#16304a;
+  border-radius:2px; display:flex; align-items:center; gap:6px; padding:6px 8px; font:700 .69rem var(--sans); white-space:nowrap; box-shadow:0 2px 4px #11304c1a }
+.marker { visibility:hidden }
+.marker::after,.planMarker::after { content:""; position:absolute; bottom:-7px; height:6px; width:1px; left:50%; background:#344e60 }
+.marker[aria-pressed=true],.planMarker[aria-pressed=true] { z-index:1; background:#133352; color:#fff; border-color:#133352 }
+.plan { position:relative; width:min(96%,610px); max-width:calc((clamp(355px,32vw,500px) - 16px) * 1.3846); aspect-ratio:36/26 }
+.plan svg { width:100%; height:100% }
+.toolbar { min-height:50px; display:flex; justify-content:space-between; align-items:stretch; padding:0 9px; background:#eef0e7; border:1px solid var(--rule) }
+.toolbar button,.toolbar>span,.paging button { display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:44px; color:inherit; background:transparent; border:0; font-size:.8rem; font-weight:700; padding:0 10px }
+.camera { display:flex; align-items:center }
+.camera button { width:40px; min-width:0 }
+.toolbar button:hover,.paging button:hover,.stops button:hover { background:#dce2d9 }
+.viewer figcaption { margin-top:10px; display:flex; flex-wrap:wrap; justify-content:space-between; column-gap:12px; row-gap:3px; font-size:.69rem; line-height:1.5; color:#4e5a60 }
+.guide { border-top:2px solid var(--blue); padding:20px 0 0 }
+.details h3 { margin:8px 0 11px; font-size:clamp(32px,2.9vw,50px); line-height:.99 }
+.details>p:last-child { font-size:.94rem; line-height:1.6; margin:0; color:#3a4a53 }
+.paging { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--rule) }
+.paging button { padding:0 6px }
+.stops { list-style:none; margin:0; padding:0 }
+.stops button { width:100%; display:flex; gap:12px; align-items:baseline; min-height:44px; border:0; border-bottom:1px solid var(--rule); color:inherit; background:transparent; text-align:left; padding:12px 7px; font-size:.82rem }
+.stops span { font:500 .72rem var(--mono); color:#696241 }
+.stops i { margin-left:auto; font-style:normal }
+.stops [aria-current] { background:#e9e8dc; font-weight:750 }
+.footer { margin-top:clamp(34px,5vw,75px); padding:16px 0 24px; border-top:1px solid var(--rule); color:#52606a; font-size:.68rem; line-height:1.6 }
+.footer a { text-decoration:underline; text-underline-offset:2px }
+@media(max-width:760px) {
+  .spread { grid-template-columns:1fr; gap:22px }
+  .hero .photo { width:100%!important; object-position:65% 56% }
+  .hero::after { background:linear-gradient(90deg,#102f52ed,#102f52a8 50%,#102f5230) }
+  .heroInner { padding:44px 0 34px }
+  .stage { height:clamp(290px,64vw,390px) }
+  .plan { max-width:min(96%,490px) }
+}
+@media(max-width:480px) {
+  .wrap { height:54px }
+  .heading { display:block; margin-bottom:12px }
+  .heading h2 { margin-bottom:4px }
+  .hero h1 { font-size:clamp(50px,15vw,72px) }
+  .marker:not([aria-pressed=true]) span,.planMarker:not([aria-pressed=true]) span { display:none }
+  .marker,.planMarker { min-width:28px; min-height:28px; justify-content:center }
+  .camera button { width:36px }
+  .viewer figcaption { display:grid }
+}
+
+.aerial { width:min(92%,1280px); margin:clamp(2rem,6vw,6rem) auto; }
+.aerial img { display:block; width:100%; height:auto; }
+.aerial figcaption { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; padding:1rem 0; border-bottom:1px solid currentColor; flex-wrap:wrap; }
+.aerial figcaption strong { font-family:var(--serif); font-size:clamp(1.3rem,3vw,2.4rem); }

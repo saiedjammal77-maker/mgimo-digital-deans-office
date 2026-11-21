@@ -1,0 +1,39 @@
+@import "tailwindcss" source(none);
+@source "../app";
+@source "../components";
+
+:root {
+  --ink:#07172d;
+  --blue:#153d72;
+  --gold:#d5b77a;
+  --paper:#f5f7fa;
+  --night:#080b12;
+  --serif:"Cormorant Garamond Variable",Georgia,"Times New Roman",serif;
+  --sans:"Manrope Variable","Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+@theme inline { --font-sans:var(--sans); --font-serif:var(--serif); }
+* { box-sizing:border-box }
+html { scroll-padding-top:1rem; }
+body { margin:0; background:var(--night); color:var(--paper); font-family:var(--sans); -webkit-font-smoothing:antialiased }
+a { color:inherit; text-decoration:none }
+button, input, select, textarea { font:inherit }
+button { cursor:pointer }
+button:disabled { cursor:wait }
+:focus-visible { outline:3px solid #a57c38; outline-offset:4px }
+::selection { background:var(--gold); color:var(--ink) }
+@media(prefers-reduced-motion:no-preference){
+  .atlas-page-enter{animation:page-arrive .32s ease-out both}
+  @keyframes page-arrive{from{opacity:.78}to{opacity:1}}
+}
+.atlas-brand { display:inline-flex; align-items:center; gap:11px; white-space:nowrap; line-height:1; }
+.atlas-brand-mark { width:39px; height:39px; color:var(--gold); flex:none }
+.atlas-wordmark { font-family:var(--serif); font-size:2.1rem; letter-spacing:.055em; text-transform:uppercase; font-weight:600 }
+.atlas-institution { border-left:1px solid currentColor; padding-left:13px; margin-left:3px; font-size:.64rem; font-weight:750; letter-spacing:.12em; line-height:1.45; opacity:.8 }
+.atlas-language { appearance:auto; border:0; color:inherit; background:transparent; cursor:pointer; font:600 .76rem var(--sans); min-height:44px; padding-inline:3px; max-width:90px; }
+.atlas-language option { color:#13243d; background:#fff; }
+.atlas-language:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+.desk-brand{display:inline-flex;align-items:center;white-space:nowrap;gap:10px;font:600 .9rem var(--sans)}.desk-brand b{font-weight:820;letter-spacing:-.065em;font-size:1.4rem}.desk-brand i{font-style:normal;color:var(--gold)}
+.atlas-skip { position:fixed; top:0; left:1rem; z-index:100; transform:translateY(-150%); background:var(--gold); color:var(--ink); border-radius:4px; padding:10px 16px }
+.atlas-skip:focus { transform:translateY(5px) }
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
